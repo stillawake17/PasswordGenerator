@@ -115,10 +115,41 @@ let password = UCchoice.concat(LCchoice, SCchoice, nCchoice);
 console.log(password);
 
 // Function to prompt user for password options
-function getPasswordOptions() {
+function getPasswordOptions() {}
 // pseudocode prompt alert
 // establish length -- create array of that length or use the length as the number for the FOR loop
 
+let pwdOptions = [1, 2, 3, 4];
+let selection = prompt("Choose an option 1 to 4: 1 - Upper case, 2 - upper & lower case, 3 and special or 4 and numeric?");
+switch(selection) {
+  case 1:
+    for (i=0; i < pwdLength; i++) {
+    let password = pwdArray.push(UCchoice); }
+    break;
+  case 2:
+// concatenate upper and lower case and then choose 16 random
+const twoOptions = UCchoice.concat(LCchoice);
+for (i=0; i < pwdLength; i++) {
+  let password = pwdArray.push(twoOptions); }
+  break;
+
+  case 3:
+  const threeOptions = UCchoice.concat(LCchoice, SCchoice);
+for (i=0; i < pwdLength; i++) {
+  let password = pwdArray.push(threeOptions); }
+  break;
+
+  case 4:
+    const fourOptions = UCchoice.concat(LCchoice, SCchoice, nCchoice);
+  for (i=0; i < pwdLength; i++) {
+    let password = pwdArray.push(threeOptions); }
+    break;
+
+ default:
+    text = "I have never heard of that one!";
+// }
+
+  
 
 // do you want special characters?
 // upper case, lower case etc.
